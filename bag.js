@@ -79,7 +79,7 @@ function removeFromBag(itemId){
 function generatedItemHtml(item){
 return `<div class="bag-item-container">
     <div class="item-left-part">
-      <img class="bag-item-img" src="../${item.image}">
+      <img class="bag-item-img" src="./${item.image}">
     </div>
     <div class="item-right-part">
       <div class="company">${item.company}</div>
@@ -100,4 +100,5 @@ return `<div class="bag-item-container">
 
     <div class="remove-from-cart" onclick="removeFromBag(${item.id})">X</div>
   </div>`
+
 }
